@@ -1,3 +1,5 @@
+<p align="center"><img src="https://raw.githubusercontent.com/openweft/brand/main/social/openweft.png" alt="openweft" width="720"></p>
+
 # weft-microvm-backup
 
 In-VM backup agent for weft microVMs, built on top of [kloset](https://github.com/PlakarKorp/kloset)
