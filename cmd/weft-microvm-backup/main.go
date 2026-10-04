@@ -4,19 +4,19 @@
 //
 // Subcommands :
 //
-//   create  : take a fresh snapshot
-//   list    : enumerate snapshots in a repository
-//   restore : reconstruct a snapshot under a destination root
-//   delete  : drop one snapshot
-//   prune   : keep N newest snapshots, drop the rest
+//	create  : take a fresh snapshot
+//	list    : enumerate snapshots in a repository
+//	restore : reconstruct a snapshot under a destination root
+//	delete  : drop one snapshot
+//	prune   : keep N newest snapshots, drop the rest
 //
 // Common flags :
 //
-//   --target  (required) : backupstore URL (fs:// / s3:// / sftp://)
-//   --passphrase-env     : env var holding the encryption passphrase
-//                          (empty = no encryption ; not recommended)
-//   --source-root        : in-VM filesystem root the source walker is
-//                          based at (default "/")
+//	--target  (required) : backupstore URL (fs:// / s3:// / sftp://)
+//	--passphrase-env     : env var holding the encryption passphrase
+//	                       (empty = no encryption ; not recommended)
+//	--source-root        : in-VM filesystem root the source walker is
+//	                       based at (default "/")
 package main
 
 import (
