@@ -4,13 +4,13 @@
 //
 // Layering :
 //
-//   Caller (CLI / agent NATS handler)
-//      ↓
-//   backup.Backup{}  (this package — operator-facing API)
-//      ↓
-//   kloset/repository.Repository  (chunking, dedup, snapshot index)
-//      ↓
-//   kloset/storage.Backend         (fs / s3 / sftp / …)
+//	Caller (CLI / agent NATS handler)
+//	   ↓
+//	backup.Backup{}  (this package — operator-facing API)
+//	   ↓
+//	kloset/repository.Repository  (chunking, dedup, snapshot index)
+//	   ↓
+//	kloset/storage.Backend         (fs / s3 / sftp / …)
 //
 // The shapes here intentionally mirror weft-block's snapshot+backup API
 // (Spec / List / Delete / Restore) so a unified `weft volume backup …` CLI
